@@ -2,11 +2,11 @@
 
 ## Student Details
 
-**Student Name:** Jahnavi Padamati  
-**Register Number:** CDS/2025/1482 
-**Class / Section:** 05 
-**Subject:** Web Technology  
-**Assignment:** HTML, CSS & JavaScript Practical Programs Website  
+**Student Name:Jahnavi Padamati  
+**Register Number: CDS/2025/1482 
+**Class / Section: 05 
+**Subject:Web Technology  
+**Assignment: HTML, CSS & JavaScript Practical Programs Website  
 
 ## About the Project
 
