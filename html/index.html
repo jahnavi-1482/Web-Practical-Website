@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Programs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .navigation {
+            margin-bottom: 30px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 7px;
+            margin-right: 10px;
+        }
+
+        .navigation a:hover {
+            background: #1d4ed8;
+        }
+
+        .program-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .program {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .program-number {
+            font-weight: bold;
+            color: #2563eb;
+            min-width: 35px;
+        }
+
+        .program-title {
+            flex: 1;
+            font-size: 17px;
+        }
+
+        .view-btn {
+            text-decoration: none;
+            background: #0f766e;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 7px;
+            white-space: nowrap;
+        }
+
+        .view-btn:hover {
+            background: #115e59;
+        }
+
+        footer {
+            text-align: center;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 650px) {
+            .program {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .view-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Programs</h1>
+        <p>HTML Practical Experiments</p>
+    </header>
+
+    <main class="container">
+
+        <div class="navigation">
+            <a href="../index.html">← Home</a>
+        </div>
+
+        <div class="program-list">
+
+            <div class="program">
+                <span class="program-number">01</span>
+                <span class="program-title">
+                    Create a basic HTML webpage using headings, paragraphs, and line breaks.
+                </span>
+                <a href="html-01.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">02</span>
+                <span class="program-title">
+                    Create an HTML page containing ordered, unordered, and description lists.
+                </span>
+                <a href="html-02.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">03</span>
+                <span class="program-title">
+                    Create a webpage using tables with rows, columns, borders, and merged cells.
+                </span>
+                <a href="html-03.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">04</span>
+                <span class="program-title">
+                    Create an HTML page containing images and hyperlinks.
+                </span>
+                <a href="html-04.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">05</span>
+                <span class="program-title">
+                    Create a student registration form using HTML form elements.
+                </span>
+                <a href="html-05.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">06</span>
+                <span class="program-title">
+                    Create a webpage using audio and video elements.
+                </span>
+                <a href="html-06.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">07</span>
+                <span class="program-title">
+                    Create a webpage using frames/iframes.
+                </span>
+                <a href="html-07.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">08</span>
+                <span class="program-title">
+                    Create an HTML page demonstrating semantic elements such as header, nav,
+                    section, article, and footer.
+                </span>
+                <a href="html-08.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">09</span>
+                <span class="program-title">
+                    Create a webpage using HTML5 input types such as email, date, number,
+                    and password.
+                </span>
+                <a href="html-09.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">10</span>
+                <span class="program-title">
+                    Create a college timetable using an HTML table.
+                </span>
+                <a href="html-10.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">11</span>
+                <span class="program-title">
+                    Create a webpage with internal and external CSS styling.
+                </span>
+                <a href="html-11.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">12</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS selectors, colors, fonts, margins,
+                    padding, and borders.
+                </span>
+                <a href="html-12.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">13</span>
+                <span class="program-title">
+                    Create a responsive webpage using CSS media queries.
+                </span>
+                <a href="html-13.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">14</span>
+                <span class="program-title">
+                    Create a webpage using Bootstrap components.
+                </span>
+                <a href="html-14.html" class="view-btn">View Program</a>
+            </div>
+
+            <div class="program">
+                <span class="program-number">15</span>
+                <span class="program-title">
+                    Create a simple personal portfolio webpage using HTML and CSS.
+                </span>
+                <a href="html-15.html" class="view-btn">View Program</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Web Technology Practical Lab</p>
+    </footer>
+
+</body>
+
+</html>

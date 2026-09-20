@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 01 - Hello World</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f7fb;
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 22px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>JavaScript Program 1</h1>
+
+    <h3>Question</h3>
+    <p>Write a JavaScript program to display “Hello World”.</p>
+
+    <button onclick="showMessage()">Click Here</button>
+
+    <div id="output"></div>
+
+    <br>
+    <a href="index.html">← Back to JavaScript Programs</a>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("output").innerHTML = "Hello World";
+    }
+</script>
+
+</body>
+</html>

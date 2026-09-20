@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 07 - Fibonacci Series</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        #output {
+            margin-top: 20px;
+            color: green;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>JavaScript Program 7</h1>
+
+    <h3>Question</h3>
+    <p>Write a program to generate the Fibonacci series.</p>
+
+    <input type="number" id="number" placeholder="Number of terms">
+
+    <br><br>
+
+    <button onclick="generateFibonacci()">Generate</button>
+
+    <div id="output"></div>
+
+    <br>
+    <a href="index.html">← Back to JavaScript Programs</a>
+
+</div>
+
+<script>
+    function generateFibonacci() {
+
+        let n = Number(document.getElementById("number").value);
+
+        let a = 0;
+        let b = 1;
+        let series = [];
+
+        for (let i = 0; i < n; i++) {
+
+            series.push(a);
+
+            let next = a + b;
+            a = b;
+            b = next;
+        }
+
+        document.getElementById("output").innerHTML =
+            "Fibonacci Series:<br>" + series.join(", ");
+    }
+</script>
+
+</body>
+</html>

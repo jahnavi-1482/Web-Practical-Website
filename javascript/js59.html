@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frequency of Elements</title>
+</head>
+<body>
+
+<script>
+let arr = [1, 2, 2, 3, 1, 2, 4, 3];
+let frequency = {};
+
+for (let element of arr) {
+    if (frequency[element]) {
+        frequency[element]++;
+    } else {
+        frequency[element] = 1;
+    }
+}
+
+for (let element in frequency) {
+    document.write(element + " : " + frequency[element] + "<br>");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Table</title>
+</head>
+<body>
+
+<input type="text" id="search" placeholder="Search">
+
+<table border="1" id="table">
+    <tr>
+        <td>Rahul</td>
+    </tr>
+    <tr>
+        <td>Priya</td>
+    </tr>
+    <tr>
+        <td>Arun</td>
+    </tr>
+</table>
+
+<script>
+document.getElementById("search").addEventListener("input", function() {
+
+    let searchText = this.value.toLowerCase();
+    let rows = document.querySelectorAll("#table tr");
+
+    rows.forEach(function(row) {
+        let text = row.textContent.toLowerCase();
+
+        row.style.display = text.includes(searchText) ? "" : "none";
+    });
+
+});
+</script>
+
+</body>
+</html>

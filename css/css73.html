@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Functions</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f7fb;
+            margin: 0;
+        }
+
+        .container {
+            width: min(90%, 900px);
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 60px);
+            color: #2563eb;
+        }
+
+        .box {
+            width: max(250px, 50%);
+            min-height: 150px;
+            background-color: #dbeafe;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Functions</h1>
+
+        <div class="box">
+            <p>
+                This webpage demonstrates min(), max(), and clamp().
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

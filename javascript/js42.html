@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 42</title>
+</head>
+<body>
+
+<h1>JavaScript Program 42</h1>
+
+<p id="output"></p>
+
+<script>
+function callbackExample(callback) {
+    callback("Callback executed");
+}
+
+function promiseExample() {
+    return new Promise(function(resolve) {
+        resolve("Promise resolved");
+    });
+}
+
+async function asyncExample() {
+    let result = await promiseExample();
+    return result;
+}
+
+callbackExample(function(message) {
+    document.getElementById("output").innerHTML =
+        message + "<br>";
+});
+
+asyncExample().then(function(result) {
+    document.getElementById("output").innerHTML +=
+        result + "<br>" +
+        "Async/Await executed";
+});
+</script>
+
+</body>
+</html>

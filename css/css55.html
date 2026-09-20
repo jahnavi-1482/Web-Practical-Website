@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #2563eb;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #dbeafe;
+        }
+
+        .hero h1 {
+            color: #1e3a8a;
+        }
+
+        .courses {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .course {
+            width: 250px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 8px gray;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC College</h1>
+        <p>Education for a Better Future</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to ABC College</h1>
+        <p>Learn, Grow and Build Your Future.</p>
+    </section>
+
+    <section class="courses">
+
+        <div class="course">
+            <h2>Computer Science</h2>
+            <p>Learn programming and technology.</p>
+        </div>
+
+        <div class="course">
+            <h2>Electronics</h2>
+            <p>Learn electronics and communication.</p>
+        </div>
+
+        <div class="course">
+            <h2>Mechanical</h2>
+            <p>Learn mechanical engineering.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 ABC College</p>
+    </footer>
+
+</body>
+</html>

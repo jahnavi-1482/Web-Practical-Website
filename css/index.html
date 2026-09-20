@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Programs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .navigation {
+            margin-bottom: 30px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 7px;
+            margin-right: 10px;
+        }
+
+        .navigation a:hover {
+            background: #1d4ed8;
+        }
+
+        .program-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .program {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .program-number {
+            font-weight: bold;
+            color: #2563eb;
+            min-width: 35px;
+        }
+
+        .program-title {
+            flex: 1;
+            font-size: 17px;
+        }
+
+        .view-btn {
+            text-decoration: none;
+            background: #0f766e;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 7px;
+            white-space: nowrap;
+        }
+
+        .view-btn:hover {
+            background: #115e59;
+        }
+
+        footer {
+            text-align: center;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 650px) {
+
+            .program {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .view-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Programs</h1>
+        <p>CSS Practical Experiments</p>
+    </header>
+
+    <main class="container">
+
+        <div class="navigation">
+            <a href="../index.html">← Home</a>
+        </div>
+
+        <div class="program-list">
+
+            <!-- CSS 01 -->
+            <div class="program">
+                <span class="program-number">01</span>
+                <span class="program-title">
+                    Create a webpage demonstrating inline, internal, and external CSS.
+                </span>
+                <a href="css1.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 02 -->
+            <div class="program">
+                <span class="program-number">02</span>
+                <span class="program-title">
+                    Create a webpage using different CSS selectors.
+                </span>
+                <a href="css2.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 03 -->
+            <div class="program">
+                <span class="program-number">03</span>
+                <span class="program-title">
+                    Demonstrate CSS colors, backgrounds, and borders.
+                </span>
+                <a href="css3.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 04 -->
+            <div class="program">
+                <span class="program-number">04</span>
+                <span class="program-title">
+                    Create a webpage demonstrating font properties and text formatting.
+                </span>
+                <a href="css4.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 05 -->
+            <div class="program">
+                <span class="program-number">05</span>
+                <span class="program-title">
+                    Demonstrate the CSS box model using margin, border, padding, and content.
+                </span>
+                <a href="css5.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 06 -->
+            <div class="program">
+                <span class="program-number">06</span>
+                <span class="program-title">
+                    Create a webpage using different width, height, and sizing properties.
+                </span>
+                <a href="css6.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 07 -->
+            <div class="program">
+                <span class="program-number">07</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS positioning — static, relative, absolute,
+                    fixed, and sticky.
+                </span>
+                <a href="css7.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 08 -->
+            <div class="program">
+                <span class="program-number">08</span>
+                <span class="program-title">
+                    Create a webpage using float and clear properties.
+                </span>
+                <a href="css8.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 09 -->
+            <div class="program">
+                <span class="program-number">09</span>
+                <span class="program-title">
+                    Create a styled navigation bar using CSS.
+                </span>
+                <a href="css9.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 10 -->
+            <div class="program">
+                <span class="program-number">10</span>
+                <span class="program-title">
+                    Create a webpage demonstrating pseudo-classes such as :hover, :active,
+                    :focus, and :visited.
+                </span>
+                <a href="css10.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 11 -->
+            <div class="program">
+                <span class="program-number">11</span>
+                <span class="program-title">
+                    Create a webpage demonstrating pseudo-elements such as ::before, ::after,
+                    ::first-letter, and ::first-line.
+                </span>
+                <a href="css11.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 12 -->
+            <div class="program">
+                <span class="program-number">12</span>
+                <span class="program-title">
+                    Create a webpage using CSS lists and tables.
+                </span>
+                <a href="css12.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 13 -->
+            <div class="program">
+                <span class="program-number">13</span>
+                <span class="program-title">
+                    Create a webpage with a styled registration form using CSS.
+                </span>
+                <a href="css13.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 14 -->
+            <div class="program">
+                <span class="program-number">14</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS Flexbox.
+                </span>
+                <a href="css14.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 15 -->
+            <div class="program">
+                <span class="program-number">15</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS Grid layout.
+                </span>
+                <a href="css15.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 16 -->
+            <div class="program">
+                <span class="program-number">16</span>
+                <span class="program-title">
+                    Create a responsive webpage using CSS media queries.
+                </span>
+                <a href="css16.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 17 -->
+            <div class="program">
+                <span class="program-number">17</span>
+                <span class="program-title">
+                    Create a webpage demonstrating transitions and transformations.
+                </span>
+                <a href="css17.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 18 -->
+            <div class="program">
+                <span class="program-number">18</span>
+                <span class="program-title">
+                    Create a webpage using CSS animations.
+                </span>
+                <a href="css18.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 19 -->
+            <div class="program">
+                <span class="program-number">19</span>
+                <span class="program-title">
+                    Create a responsive navigation menu using HTML and CSS.
+                </span>
+                <a href="css19.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 20 -->
+            <div class="program">
+                <span class="program-number">20</span>
+                <span class="program-title">
+                    Design a personal portfolio webpage using HTML and CSS.
+                </span>
+                <a href="css20.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 21 -->
+            <div class="program">
+                <span class="program-number">21</span>
+                <span class="program-title">
+                    Design a college/student profile page using HTML and CSS.
+                </span>
+                <a href="css21.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 22 -->
+            <div class="program">
+                <span class="program-number">22</span>
+                <span class="program-title">
+                    Create a login page using HTML and CSS.
+                </span>
+                <a href="css22.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 23 -->
+            <div class="program">
+                <span class="program-number">23</span>
+                <span class="program-title">
+                    Create a product card layout using CSS.
+                </span>
+                <a href="css23.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 24 -->
+            <div class="program">
+                <span class="program-number">24</span>
+                <span class="program-title">
+                    Create a responsive photo gallery using CSS Grid/Flexbox.
+                </span>
+                <a href="css24.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 25 -->
+            <div class="program">
+                <span class="program-number">25</span>
+                <span class="program-title">
+                    Create a complete website homepage using HTML and CSS.
+                </span>
+                <a href="css25.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 26 -->
+            <div class="program">
+                <span class="program-number">26</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS inheritance and specificity.
+                </span>
+                <a href="css26.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 27 -->
+            <div class="program">
+                <span class="program-number">27</span>
+                <span class="program-title">
+                    Demonstrate the use of universal, element, class, ID, attribute, and grouping selectors.
+                </span>
+                <a href="css27.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 28 -->
+            <div class="program">
+                <span class="program-number">28</span>
+                <span class="program-title">
+                    Create a webpage using combinator selectors: descendant, child, adjacent sibling,
+                    and general sibling.
+                </span>
+                <a href="css28.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 29 -->
+            <div class="program">
+                <span class="program-number">29</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS variables (custom properties).
+                </span>
+                <a href="css29.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 30 -->
+            <div class="program">
+                <span class="program-number">30</span>
+                <span class="program-title">
+                    Create a webpage using different background images and background positioning.
+                </span>
+                <a href="css30.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 31 -->
+            <div class="program">
+                <span class="program-number">31</span>
+                <span class="program-title">
+                    Demonstrate linear gradients and radial gradients using CSS.
+                </span>
+                <a href="css31.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 32 -->
+            <div class="program">
+                <span class="program-number">32</span>
+                <span class="program-title">
+                    Create a webpage demonstrating box-shadow and text-shadow.
+                </span>
+                <a href="css32.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 33 -->
+            <div class="program">
+                <span class="program-number">33</span>
+                <span class="program-title">
+                    Create a webpage using border-radius to design different shapes.
+                </span>
+                <a href="css33.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 34 -->
+            <div class="program">
+                <span class="program-number">34</span>
+                <span class="program-title">
+                    Demonstrate opacity and transparency using CSS.
+                </span>
+                <a href="css34.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 35 -->
+            <div class="program">
+                <span class="program-number">35</span>
+                <span class="program-title">
+                    Create a webpage using overflow properties.
+                </span>
+                <a href="css35.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 36 -->
+            <div class="program">
+                <span class="program-number">36</span>
+                <span class="program-title">
+                    Demonstrate z-index and stacking order.
+                </span>
+                <a href="css36.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 37 -->
+            <div class="program">
+                <span class="program-number">37</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS display properties such as block, inline,
+                    inline-block, and none.
+                </span>
+                <a href="css37.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 38 -->
+            <div class="program">
+                <span class="program-number">38</span>
+                <span class="program-title">
+                    Create a webpage demonstrating visibility and hiding elements.
+                </span>
+                <a href="css38.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 39 -->
+            <div class="program">
+                <span class="program-number">39</span>
+                <span class="program-title">
+                    Create a dropdown menu using HTML and CSS.
+                </span>
+                <a href="css39.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 40 -->
+            <div class="program">
+                <span class="program-number">40</span>
+                <span class="program-title">
+                    Create an image hover effect using CSS.
+                </span>
+                <a href="css40.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 41 -->
+            <div class="program">
+                <span class="program-number">41</span>
+                <span class="program-title">
+                    Create a tooltip using CSS.
+                </span>
+                <a href="css41.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 42 -->
+            <div class="program">
+                <span class="program-number">42</span>
+                <span class="program-title">
+                    Create a webpage with a CSS-only button hover animation.
+                </span>
+                <a href="css42.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 43 -->
+            <div class="program">
+                <span class="program-number">43</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS filters such as blur, grayscale,
+                    brightness, and contrast.
+                </span>
+                <a href="css43.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 44 -->
+            <div class="program">
+                <span class="program-number">44</span>
+                <span class="program-title">
+                    Create a webpage demonstrating object-fit and object-position.
+                </span>
+                <a href="css44.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 45 -->
+            <div class="program">
+                <span class="program-number">45</span>
+                <span class="program-title">
+                    Create a responsive image gallery using CSS.
+                </span>
+                <a href="css45.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 46 -->
+            <div class="program">
+                <span class="program-number">46</span>
+                <span class="program-title">
+                    Create a card-based layout using Flexbox.
+                </span>
+                <a href="css46.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 47 -->
+            <div class="program">
+                <span class="program-number">47</span>
+                <span class="program-title">
+                    Create a dashboard layout using CSS Grid.
+                </span>
+                <a href="css47.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 48 -->
+            <div class="program">
+                <span class="program-number">48</span>
+                <span class="program-title">
+                    Create a two-column webpage layout using CSS Grid.
+                </span>
+                <a href="css48.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 49 -->
+            <div class="program">
+                <span class="program-number">49</span>
+                <span class="program-title">
+                    Create a three-column webpage layout using Flexbox.
+                </span>
+                <a href="css49.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 50 -->
+            <div class="program">
+                <span class="program-number">50</span>
+                <span class="program-title">
+                    Create a webpage with a sticky header.
+                </span>
+                <a href="css50.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 51 -->
+            <div class="program">
+                <span class="program-number">51</span>
+                <span class="program-title">
+                    Create a webpage with a fixed sidebar.
+                </span>
+                <a href="css51.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 52 -->
+            <div class="program">
+                <span class="program-number">52</span>
+                <span class="program-title">
+                    Create a responsive footer using HTML and CSS.
+                </span>
+                <a href="css52.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 53 -->
+            <div class="program">
+                <span class="program-number">53</span>
+                <span class="program-title">
+                    Create a responsive login and signup page.
+                </span>
+                <a href="css53.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 54 -->
+            <div class="program">
+                <span class="program-number">54</span>
+                <span class="program-title">
+                    Create a responsive contact form.
+                </span>
+                <a href="css54.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 55 -->
+            <div class="program">
+                <span class="program-number">55</span>
+                <span class="program-title">
+                    Create a responsive college website homepage.
+                </span>
+                <a href="css55.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 56 -->
+            <div class="program">
+                <span class="program-number">56</span>
+                <span class="program-title">
+                    Create a restaurant webpage using HTML and CSS.
+                </span>
+                <a href="css56.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 57 -->
+            <div class="program">
+                <span class="program-number">57</span>
+                <span class="program-title">
+                    Create an online shopping webpage using CSS.
+                </span>
+                <a href="css57.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 58 -->
+            <div class="program">
+                <span class="program-number">58</span>
+                <span class="program-title">
+                    Create a travel website homepage using CSS.
+                </span>
+                <a href="css58.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 59 -->
+            <div class="program">
+                <span class="program-number">59</span>
+                <span class="program-title">
+                    Create a news/blog webpage layout using CSS Grid.
+                </span>
+                <a href="css59.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 60 -->
+            <div class="program">
+                <span class="program-number">60</span>
+                <span class="program-title">
+                    Create a portfolio website with multiple sections using HTML and CSS.
+                </span>
+                <a href="css60.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 61 -->
+            <div class="program">
+                <span class="program-number">61</span>
+                <span class="program-title">
+                    Create a webpage using CSS Grid template areas.
+                </span>
+                <a href="css61.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 62 -->
+            <div class="program">
+                <span class="program-number">62</span>
+                <span class="program-title">
+                    Demonstrate Flexbox alignment and ordering properties.
+                </span>
+                <a href="css62.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 63 -->
+            <div class="program">
+                <span class="program-number">63</span>
+                <span class="program-title">
+                    Create a responsive layout using CSS Grid and media queries.
+                </span>
+                <a href="css63.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 64 -->
+            <div class="program">
+                <span class="program-number">64</span>
+                <span class="program-title">
+                    Create a mobile-first responsive webpage.
+                </span>
+                <a href="css64.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 65 -->
+            <div class="program">
+                <span class="program-number">65</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS transitions.
+                </span>
+                <a href="css65.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 66 -->
+            <div class="program">
+                <span class="program-number">66</span>
+                <span class="program-title">
+                    Create a webpage demonstrating 2D and 3D CSS transformations.
+                </span>
+                <a href="css66.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 67 -->
+            <div class="program">
+                <span class="program-number">67</span>
+                <span class="program-title">
+                    Create a webpage using keyframe animations.
+                </span>
+                <a href="css67.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 68 -->
+            <div class="program">
+                <span class="program-number">68</span>
+                <span class="program-title">
+                    Create a loading spinner animation using CSS.
+                </span>
+                <a href="css68.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 69 -->
+            <div class="program">
+                <span class="program-number">69</span>
+                <span class="program-title">
+                    Create a sliding image/card animation using CSS.
+                </span>
+                <a href="css69.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 70 -->
+            <div class="program">
+                <span class="program-number">70</span>
+                <span class="program-title">
+                    Create a CSS-only modal/popup design.
+                </span>
+                <a href="css70.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 71 -->
+            <div class="program">
+                <span class="program-number">71</span>
+                <span class="program-title">
+                    Create a dark-mode webpage using CSS variables.
+                </span>
+                <a href="css71.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 72 -->
+            <div class="program">
+                <span class="program-number">72</span>
+                <span class="program-title">
+                    Create a webpage demonstrating responsive typography.
+                </span>
+                <a href="css72.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 73 -->
+            <div class="program">
+                <span class="program-number">73</span>
+                <span class="program-title">
+                    Create a webpage using clamp(), min(), and max() CSS functions.
+                </span>
+                <a href="css73.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 74 -->
+            <div class="program">
+                <span class="program-number">74</span>
+                <span class="program-title">
+                    Create a webpage demonstrating CSS calc() function.
+                </span>
+                <a href="css74.html" class="view-btn">View Program</a>
+            </div>
+
+            <!-- CSS 75 -->
+            <div class="program">
+                <span class="program-number">75</span>
+                <span class="program-title">
+                    Create a complete responsive website using HTML5, CSS3, Flexbox, Grid, and media queries.
+                </span>
+                <a href="css75.html" class="view-btn">View Program</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Web Technology Practical Lab</p>
+    </footer>
+
+</body>
+
+</html>

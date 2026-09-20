@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Float and Clear</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #2563eb;
+        }
+
+        .left {
+            float: left;
+            width: 150px;
+            height: 100px;
+            background-color: #bfdbfe;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .right {
+            float: right;
+            width: 150px;
+            height: 100px;
+            background-color: #bbf7d0;
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        .clear {
+            clear: both;
+            background-color: #fef3c7;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Float and Clear</h1>
+
+    <div class="box">
+
+        <div class="left">
+            Float Left
+        </div>
+
+        <div class="right">
+            Float Right
+        </div>
+
+        <p>
+            This text flows around the floated elements.
+            The float property allows elements to move to the left
+            or right side of their container.
+        </p>
+
+        <div class="clear">
+            This section uses clear: both, so it appears below the floated elements.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

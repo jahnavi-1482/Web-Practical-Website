@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Element</title>
+</head>
+<body>
+
+<h2>Remove HTML Element</h2>
+
+<p id="text">This paragraph will be removed.</p>
+
+<button onclick="removeElement()">Remove</button>
+
+<script>
+function removeElement() {
+    let element = document.getElementById("text");
+    element.remove();
+}
+</script>
+
+</body>
+</html>

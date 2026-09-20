@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 48</title>
+</head>
+<body>
+
+<h1>JavaScript Program 48</h1>
+
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+
+<button onclick="swapNumbers()">Swap</button>
+
+<p id="output"></p>
+
+<script>
+function swapNumbers() {
+
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+
+    let temp = a;
+    a = b;
+    b = temp;
+
+    document.getElementById("output").innerHTML =
+        "After swapping:<br>" +
+        "First number = " + a + "<br>" +
+        "Second number = " + b;
+}
+</script>
+
+</body>
+</html>

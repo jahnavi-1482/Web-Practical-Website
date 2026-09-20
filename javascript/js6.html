@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 06 - Factorial</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>JavaScript Program 6</h1>
+
+    <h3>Question</h3>
+    <p>Write a program to find the factorial of a number.</p>
+
+    <input type="number" id="number" placeholder="Enter a number">
+
+    <br><br>
+
+    <button onclick="findFactorial()">Find Factorial</button>
+
+    <div id="output"></div>
+
+    <br>
+    <a href="index.html">← Back to JavaScript Programs</a>
+
+</div>
+
+<script>
+    function findFactorial() {
+
+        let number = Number(document.getElementById("number").value);
+        let factorial = 1;
+
+        if (number < 0) {
+            document.getElementById("output").innerHTML =
+                "Factorial is not defined for negative numbers.";
+            return;
+        }
+
+        for (let i = 1; i <= number; i++) {
+            factorial = factorial * i;
+        }
+
+        document.getElementById("output").innerHTML =
+            "Factorial of " + number + " is " + factorial;
+    }
+</script>
+
+</body>
+</html>

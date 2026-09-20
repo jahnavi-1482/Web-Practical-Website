@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Pseudo Classes</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e293b;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* :hover */
+        button:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        /* :active */
+        button:active {
+            background-color: #dc2626;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: 2px solid #2563eb;
+            background-color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        /* :focus */
+        input:focus {
+            border: 3px solid green;
+            outline: none;
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            border: 2px solid #999;
+            border-radius: 6px;
+        }
+
+        /* :visited */
+        a:visited {
+            color: purple;
+        }
+
+        a {
+            display: block;
+            margin: 20px;
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Pseudo-Classes</h1>
+
+    <div class="box">
+
+        <h2>:hover and :active</h2>
+
+        <button>
+            Move mouse over me
+        </button>
+
+        <h2>:focus</h2>
+
+        <input type="text" placeholder="Click here and type">
+
+        <h2>:visited</h2>
+
+        <a href="https://www.example.com" target="_blank">
+            Visit Example Website
+        </a>
+
+    </div>
+
+</body>
+
+</html>

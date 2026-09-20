@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 19</title>
+</head>
+<body>
+
+<h1>JavaScript Program 19</h1>
+
+<p>Write a program demonstrating objects in JavaScript.</p>
+
+<button onclick="showObject()">Show Object</button>
+
+<p id="output"></p>
+
+<script>
+function showObject() {
+    let student = {
+        name: "Rahul",
+        age: 20,
+        course: "Computer Science"
+    };
+
+    document.getElementById("output").innerHTML =
+        "Name: " + student.name + "<br>" +
+        "Age: " + student.age + "<br>" +
+        "Course: " + student.course;
+}
+</script>
+
+</body>
+</html>

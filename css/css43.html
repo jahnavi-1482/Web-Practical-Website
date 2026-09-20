@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Filters</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f7fb;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blur {
+            filter: blur(4px);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .brightness {
+            filter: brightness(150%);
+        }
+
+        .contrast {
+            filter: contrast(180%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Filters</h1>
+
+    <div class="gallery">
+
+        <img src="https://via.placeholder.com/200x150" alt="Normal">
+
+        <img class="blur"
+             src="https://via.placeholder.com/200x150"
+             alt="Blur">
+
+        <img class="grayscale"
+             src="https://via.placeholder.com/200x150"
+             alt="Grayscale">
+
+        <img class="brightness"
+             src="https://via.placeholder.com/200x150"
+             alt="Brightness">
+
+        <img class="contrast"
+             src="https://via.placeholder.com/200x150"
+             alt="Contrast">
+
+    </div>
+
+</body>
+</html>

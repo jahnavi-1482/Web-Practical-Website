@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Card Layout</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Card-Based Layout</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Learn the structure of webpages.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Learn how to style webpages.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Learn how to make webpages interactive.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

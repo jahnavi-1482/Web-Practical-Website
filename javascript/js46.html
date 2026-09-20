@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 46</title>
+</head>
+<body>
+
+<h1>JavaScript Program 46</h1>
+
+<form onsubmit="return validateLogin()">
+
+    <input type="text" id="username" placeholder="Username">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+
+    <button type="submit">Login</button>
+
+</form>
+
+<p id="output"></p>
+
+<script>
+function validateLogin() {
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+
+        document.getElementById("output").innerHTML =
+            "Username and password are required.";
+
+        return false;
+    }
+
+    document.getElementById("output").innerHTML =
+        "Login successful.";
+
+    return false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfect Number</title>
+</head>
+<body>
+
+<script>
+let num = parseInt(prompt("Enter a number:"));
+let sum = 0;
+
+for (let i = 1; i < num; i++) {
+    if (num % i === 0) {
+        sum += i;
+    }
+}
+
+if (sum === num) {
+    document.write(num + " is a perfect number.");
+} else {
+    document.write(num + " is not a perfect number.");
+}
+</script>
+
+</body>
+</html>

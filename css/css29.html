@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variables</title>
+
+    <style>
+        :root {
+            --main-color: #2563eb;
+            --background-color: #dbeafe;
+            --text-color: #222;
+            --padding-size: 20px;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .box {
+            width: 400px;
+            margin: 60px auto;
+            background-color: white;
+            padding: var(--padding-size);
+            border: 3px solid var(--main-color);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        button {
+            background-color: var(--main-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>CSS Variables</h1>
+
+        <p>
+            This webpage uses CSS custom properties.
+        </p>
+
+        <button>Click Me</button>
+
+    </div>
+
+</body>
+</html>

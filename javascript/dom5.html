@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Methods</title>
+</head>
+<body>
+
+<h2 id="heading">Hello</h2>
+
+<p class="message">Paragraph 1</p>
+<p class="message">Paragraph 2</p>
+
+<button onclick="changeText()">Change Text</button>
+
+<script>
+function changeText() {
+
+    // getElementById()
+    let heading = document.getElementById("heading");
+    heading.innerHTML = "Heading Changed";
+
+    // getElementsByClassName()
+    let messages = document.getElementsByClassName("message");
+
+    for (let i = 0; i < messages.length; i++) {
+        messages[i].innerHTML = "Message Changed";
+    }
+}
+</script>
+
+</body>
+</html>

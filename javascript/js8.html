@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 08 - Prime Number</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>JavaScript Program 8</h1>
+
+    <h3>Question</h3>
+    <p>Write a program to check whether a number is prime.</p>
+
+    <input type="number" id="number" placeholder="Enter a number">
+
+    <br><br>
+
+    <button onclick="checkPrime()">Check Prime</button>
+
+    <div id="output"></div>
+
+    <br>
+    <a href="index.html">← Back to JavaScript Programs</a>
+
+</div>
+
+<script>
+    function checkPrime() {
+
+        let number = Number(document.getElementById("number").value);
+        let prime = true;
+
+        if (number < 2) {
+            prime = false;
+        }
+
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+
+            if (number % i === 0) {
+                prime = false;
+                break;
+            }
+        }
+
+        if (prime) {
+            document.getElementById("output").innerHTML =
+                number + " is a Prime number.";
+        } else {
+            document.getElementById("output").innerHTML =
+                number + " is not a Prime number.";
+        }
+    }
+</script>
+
+</body>
+</html>

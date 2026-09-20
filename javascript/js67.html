@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+
+<script>
+let email = prompt("Enter your email:");
+
+let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (pattern.test(email)) {
+    document.write("Valid email address.");
+} else {
+    document.write("Invalid email address.");
+}
+</script>
+
+</body>
+</html>

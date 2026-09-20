@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Blog</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .articles {
+            display: grid;
+            gap: 20px;
+        }
+
+        .article,
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px gray;
+        }
+
+        .article h2,
+        .sidebar h2 {
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+        <p>Latest News and Articles</p>
+    </header>
+
+    <div class="container">
+
+        <div class="articles">
+
+            <div class="article">
+                <h2>Technology News</h2>
+                <p>
+                    Technology continues to change the way people
+                    learn and communicate.
+                </p>
+            </div>
+
+            <div class="article">
+                <h2>Education News</h2>
+                <p>
+                    New learning methods are helping students
+                    improve their education.
+                </p>
+            </div>
+
+            <div class="article">
+                <h2>Science News</h2>
+                <p>
+                    Scientists continue to make discoveries
+                    in different fields.
+                </p>
+            </div>
+
+        </div>
+
+        <aside class="sidebar">
+            <h2>Latest Updates</h2>
+            <p>Technology</p>
+            <p>Education</p>
+            <p>Science</p>
+            <p>Sports</p>
+        </aside>
+
+    </div>
+
+</body>
+</html>

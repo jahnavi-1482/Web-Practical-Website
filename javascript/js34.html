@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 34</title>
+</head>
+<body>
+
+<h1>JavaScript Program 34</h1>
+
+<p>Counter Application</p>
+
+<h2 id="counter">0</h2>
+
+<button onclick="decrement()">Decrement</button>
+<button onclick="increment()">Increment</button>
+
+<script>
+let count = 0;
+
+function increment() {
+    count++;
+    document.getElementById("counter").innerHTML = count;
+}
+
+function decrement() {
+    count--;
+    document.getElementById("counter").innerHTML = count;
+}
+</script>
+
+</body>
+</html>

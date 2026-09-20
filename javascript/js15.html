@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 15</title>
+</head>
+<body>
+
+<h1>JavaScript Program 15</h1>
+
+<p>Write a program to demonstrate JavaScript functions.</p>
+
+<input type="number" id="number" placeholder="Enter a number">
+
+<button onclick="showResult()">Calculate Square</button>
+
+<p id="output"></p>
+
+<script>
+function square(number) {
+    return number * number;
+}
+
+function showResult() {
+    let number = Number(document.getElementById("number").value);
+
+    let result = square(number);
+
+    document.getElementById("output").innerHTML =
+        "Square = " + result;
+}
+</script>
+
+</body>
+</html>

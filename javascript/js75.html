@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+</head>
+<body>
+
+<table border="1" id="table"></table>
+
+<script>
+let students = [
+    ["Name", "Age"],
+    ["Rahul", 20],
+    ["Priya", 21]
+];
+
+let table = document.getElementById("table");
+
+students.forEach(function(row) {
+    let tr = document.createElement("tr");
+
+    row.forEach(function(data) {
+        let td = document.createElement("td");
+        td.textContent = data;
+        tr.appendChild(td);
+    });
+
+    table.appendChild(tr);
+});
+</script>
+
+</body>
+</html>

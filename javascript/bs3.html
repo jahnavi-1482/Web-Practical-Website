@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Object</title>
+</head>
+<body>
+
+<h2>Location Object</h2>
+
+<button onclick="showLocation()">Show URL</button>
+
+<button onclick="reloadPage()">Reload Page</button>
+
+<p id="result"></p>
+
+<script>
+function showLocation() {
+
+    document.getElementById("result").innerHTML =
+        "Current URL: " + window.location.href;
+}
+
+function reloadPage() {
+
+    window.location.reload();
+}
+</script>
+
+</body>
+</html>

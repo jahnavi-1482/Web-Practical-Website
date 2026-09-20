@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dependent Dropdown</title>
+</head>
+<body>
+
+<h2>Country → State → City</h2>
+
+<label>Country:</label>
+<select id="country" onchange="loadStates()">
+    <option value="">Select Country</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+</select>
+
+<br><br>
+
+<label>State:</label>
+<select id="state" onchange="loadCities()">
+    <option value="">Select State</option>
+</select>
+
+<br><br>
+
+<label>City:</label>
+<select id="city">
+    <option value="">Select City</option>
+</select>
+
+<script>
+
+function loadStates() {
+
+    let country = document.getElementById("country").value;
+    let state = document.getElementById("state");
+
+    state.innerHTML = '<option value="">Select State</option>';
+
+    if (country == "India") {
+
+        state.innerHTML += '<option value="Tamil Nadu">Tamil Nadu</option>';
+        state.innerHTML += '<option value="Karnataka">Karnataka</option>';
+
+    } else if (country == "USA") {
+
+        state.innerHTML += '<option value="California">California</option>';
+        state.innerHTML += '<option value="Texas">Texas</option>';
+    }
+
+    document.getElementById("city").innerHTML =
+        '<option value="">Select City</option>';
+}
+
+
+function loadCities() {
+
+    let state = document.getElementById("state").value;
+    let city = document.getElementById("city");
+
+    city.innerHTML = '<option value="">Select City</option>';
+
+    if (state == "Tamil Nadu") {
+
+        city.innerHTML += '<option>Chennai</option>';
+        city.innerHTML += '<option>Coimbatore</option>';
+
+    } else if (state == "Karnataka") {
+
+        city.innerHTML += '<option>Bangalore</option>';
+        city.innerHTML += '<option>Mysore</option>';
+
+    } else if (state == "California") {
+
+        city.innerHTML += '<option>Los Angeles</option>';
+        city.innerHTML += '<option>San Francisco</option>';
+
+    } else if (state == "Texas") {
+
+        city.innerHTML += '<option>Houston</option>';
+        city.innerHTML += '<option>Dallas</option>';
+    }
+}
+
+</script>
+
+</body>
+</html>

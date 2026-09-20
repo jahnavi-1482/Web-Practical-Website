@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Template Areas</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: #dbeafe;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: white;
+            padding: 30px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Grid Template Areas</h1>
+        </header>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </aside>
+
+        <main>
+            <h2>Main Content</h2>
+            <p>
+                This webpage demonstrates CSS Grid template areas.
+            </p>
+        </main>
+
+        <footer>
+            <p>© 2026 My Website</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

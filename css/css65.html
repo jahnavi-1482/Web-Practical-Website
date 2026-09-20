@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transitions</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f7fb;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 80px auto;
+            background-color: #2563eb;
+            transition: width 1s, height 1s, background-color 1s;
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 250px;
+            background-color: #16a34a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transitions</h1>
+
+    <div class="box"></div>
+
+    <p>Move the mouse over the box.</p>
+
+</body>
+</html>

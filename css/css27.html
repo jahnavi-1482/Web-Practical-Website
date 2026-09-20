@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #heading {
+            color: red;
+        }
+
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 8px;
+        }
+
+        h2, h3 {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selectors</h1>
+
+    <h2>Element Selector</h2>
+
+    <p>This uses an element selector.</p>
+
+    <h3 class="highlight">Class Selector</h3>
+
+    <p class="highlight">This uses a class selector.</p>
+
+    <input type="text" placeholder="Attribute selector">
+
+</body>
+</html>

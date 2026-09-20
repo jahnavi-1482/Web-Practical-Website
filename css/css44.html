@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Fit and Position</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 250px;
+            height: 200px;
+            border: 2px solid #2563eb;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cover img {
+            object-fit: cover;
+        }
+
+        .contain img {
+            object-fit: contain;
+        }
+
+        .position img {
+            object-fit: cover;
+            object-position: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Object Fit and Object Position</h1>
+
+    <div class="container">
+
+        <div class="box cover">
+            <img src="https://via.placeholder.com/400x250"
+                 alt="Object Fit Cover">
+        </div>
+
+        <div class="box contain">
+            <img src="https://via.placeholder.com/400x250"
+                 alt="Object Fit Contain">
+        </div>
+
+        <div class="box position">
+            <img src="https://via.placeholder.com/400x250"
+                 alt="Object Position">
+        </div>
+
+    </div>
+
+</body>
+</html>

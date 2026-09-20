@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 14</title>
+</head>
+<body>
+
+<h1>JavaScript Program 14</h1>
+
+<p>Write a program to find the sum and average of array elements.</p>
+
+<input type="text" id="array" placeholder="Enter numbers separated by commas">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="output"></p>
+
+<script>
+function calculate() {
+    let array = document.getElementById("array").value
+        .split(",")
+        .map(Number);
+
+    let sum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        sum = sum + array[i];
+    }
+
+    let average = sum / array.length;
+
+    document.getElementById("output").innerHTML =
+        "Sum = " + sum + "<br>" +
+        "Average = " + average;
+}
+</script>
+
+</body>
+</html>

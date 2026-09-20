@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 12</title>
+</head>
+<body>
+
+<h1>JavaScript Program 12</h1>
+
+<p>Write a program to find the largest and smallest element in an array.</p>
+
+<input type="text" id="array" placeholder="Enter numbers separated by commas">
+
+<button onclick="findValues()">Find</button>
+
+<p id="output"></p>
+
+<script>
+function findValues() {
+    let array = document.getElementById("array").value
+        .split(",")
+        .map(Number);
+
+    let largest = Math.max(...array);
+    let smallest = Math.min(...array);
+
+    document.getElementById("output").innerHTML =
+        "Largest element = " + largest + "<br>" +
+        "Smallest element = " + smallest;
+}
+</script>
+
+</body>
+</html>

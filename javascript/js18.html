@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 18</title>
+</head>
+<body>
+
+<h1>JavaScript Program 18</h1>
+
+<p>Write a program demonstrating arrays and array methods.</p>
+
+<button onclick="showArray()">Show Array Methods</button>
+
+<p id="output"></p>
+
+<script>
+function showArray() {
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    fruits.push("Orange");
+
+    let removed = fruits.pop();
+
+    document.getElementById("output").innerHTML =
+        "Array: " + fruits.join(", ") + "<br>" +
+        "Length: " + fruits.length + "<br>" +
+        "Removed element: " + removed + "<br>" +
+        "First element: " + fruits[0];
+}
+</script>
+
+</body>
+</html>

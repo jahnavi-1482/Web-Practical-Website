@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity and Transparency</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #dbeafe;
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 120px;
+            margin: 30px auto;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .opacity {
+            opacity: 0.5;
+        }
+
+        .transparent {
+            background-color: rgba(255, 0, 0, 0.5);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Opacity and Transparency</h1>
+
+    <div class="box">
+        Normal Box
+    </div>
+
+    <div class="box opacity">
+        Opacity: 0.5
+    </div>
+
+    <div class="box transparent">
+        Transparent Background
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+
+    <style>
+        img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Image Slideshow</h2>
+
+<img id="slide" src="https://picsum.photos/id/1015/400/250">
+
+<br>
+
+<button onclick="previousImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+
+<script>
+
+let images = [
+    "https://picsum.photos/id/1015/400/250",
+    "https://picsum.photos/id/1016/400/250",
+    "https://picsum.photos/id/1018/400/250",
+    "https://picsum.photos/id/1025/400/250"
+];
+
+let current = 0;
+
+function nextImage() {
+
+    current++;
+
+    if (current >= images.length) {
+        current = 0;
+    }
+
+    document.getElementById("slide").src = images[current];
+}
+
+function previousImage() {
+
+    current--;
+
+    if (current < 0) {
+        current = images.length - 1;
+    }
+
+    document.getElementById("slide").src = images[current];
+}
+
+</script>
+
+</body>
+</html>

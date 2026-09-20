@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowels and Consonants</title>
+</head>
+<body>
+
+<script>
+let str = prompt("Enter a string:");
+let vowels = 0;
+let consonants = 0;
+
+for (let char of str.toLowerCase()) {
+    if (/[a-z]/.test(char)) {
+        if ("aeiou".includes(char)) {
+            vowels++;
+        } else {
+            consonants++;
+        }
+    }
+}
+
+document.write("Vowels: " + vowels + "<br>");
+document.write("Consonants: " + consonants);
+</script>
+
+</body>
+</html>

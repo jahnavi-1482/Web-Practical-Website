@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 32</title>
+</head>
+<body>
+
+<h1>JavaScript Program 32</h1>
+
+<p>Create a to-do list using JavaScript.</p>
+
+<input type="text" id="task" placeholder="Enter a task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="todoList"></ul>
+
+<script>
+function addTask() {
+
+    let task = document.getElementById("task").value;
+
+    if (task === "") {
+        return;
+    }
+
+    let listItem = document.createElement("li");
+
+    listItem.innerHTML = task;
+
+    document.getElementById("todoList").appendChild(listItem);
+
+    document.getElementById("task").value = "";
+}
+</script>
+
+</body>
+</html>

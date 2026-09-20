@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sliding Card Animation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f7fb;
+            overflow-x: hidden;
+        }
+
+        .card {
+            width: 300px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px gray;
+            animation: slide 2s ease-in-out;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-500px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sliding Card Animation</h1>
+
+    <div class="card">
+        <h2>Welcome</h2>
+        <p>
+            This card slides into the webpage using CSS animation.
+        </p>
+    </div>
+
+</body>
+</html>

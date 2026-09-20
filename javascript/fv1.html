@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    Name:
+    <input type="text" id="name">
+    <br><br>
+
+    Email:
+    <input type="email" id="email">
+    <br><br>
+
+    Age:
+    <input type="number" id="age">
+    <br><br>
+
+    Phone:
+    <input type="text" id="phone">
+    <br><br>
+
+    Course:
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>CSE</option>
+        <option>AI & ML</option>
+        <option>Data Science</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let age = document.getElementById("age").value;
+    let phone = document.getElementById("phone").value;
+    let course = document.getElementById("course").value;
+
+    if (name == "" || email == "" || age == "" ||
+        phone == "" || course == "") {
+
+        document.getElementById("message").innerHTML =
+            "Please fill all fields";
+
+        return false;
+    }
+
+    if (phone.length != 10) {
+
+        document.getElementById("message").innerHTML =
+            "Phone number must contain 10 digits";
+
+        return false;
+    }
+
+    document.getElementById("message").innerHTML =
+        "Registration successful";
+
+    return false;
+}
+
+</script>
+
+</body>
+</html>

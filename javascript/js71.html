@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Multiple Elements</title>
+</head>
+<body>
+
+<p class="text">First paragraph</p>
+<p class="text">Second paragraph</p>
+<p class="text">Third paragraph</p>
+
+<script>
+let elements = document.getElementsByClassName("text");
+
+for (let element of elements) {
+    element.style.color = "blue";
+    element.textContent = "Changed using JavaScript";
+}
+</script>
+
+</body>
+</html>

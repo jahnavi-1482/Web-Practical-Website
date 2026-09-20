@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .box {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background-color: pink;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
+            .box {
+                width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Responsive Webpage</h1>
+    <p>Resize the browser window to see the effect.</p>
+</div>
+
+</body>
+</html>

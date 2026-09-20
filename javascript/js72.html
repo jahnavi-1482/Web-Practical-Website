@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Methods</title>
+</head>
+<body>
+
+<p id="one">Element using ID</p>
+
+<p class="text">First class element</p>
+<p class="text">Second class element</p>
+
+<script>
+let element = document.getElementById("one");
+element.style.color = "red";
+
+let elements = document.getElementsByClassName("text");
+
+for (let item of elements) {
+    item.style.color = "blue";
+}
+</script>
+
+</body>
+</html>

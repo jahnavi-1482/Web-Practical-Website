@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+<body>
+
+<h2>College Admission Form</h2>
+
+<form onsubmit="return validateAdmission()">
+
+    Student Name:
+    <input type="text" id="name">
+    <br><br>
+
+    Email:
+    <input type="email" id="email">
+    <br><br>
+
+    Date of Birth:
+    <input type="date" id="dob">
+    <br><br>
+
+    Marks:
+    <input type="number" id="marks">
+    <br><br>
+
+    Course:
+
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>Computer Science</option>
+        <option>Artificial Intelligence</option>
+        <option>Data Science</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Apply</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+function validateAdmission() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let dob = document.getElementById("dob").value;
+    let marks = document.getElementById("marks").value;
+    let course = document.getElementById("course").value;
+
+    if (name == "" || email == "" || dob == "" ||
+        marks == "" || course == "") {
+
+        document.getElementById("message").innerHTML =
+            "Please fill all fields";
+
+        return false;
+    }
+
+    if (marks < 0 || marks > 100) {
+
+        document.getElementById("message").innerHTML =
+            "Marks must be between 0 and 100";
+
+        return false;
+    }
+
+    document.getElementById("message").innerHTML =
+        "Admission form submitted successfully";
+
+    return false;
+}
+
+</script>
+
+</body>
+</html>

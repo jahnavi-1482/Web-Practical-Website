@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Tooltip</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-top: 100px;
+            padding: 15px 25px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 180px;
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Tooltip</h1>
+
+    <div class="tooltip">
+        Move Mouse Here
+
+        <span class="tooltip-text">
+            This is a tooltip message.
+        </span>
+    </div>
+
+</body>
+</html>

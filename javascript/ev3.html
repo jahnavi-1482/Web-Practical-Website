@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Events</title>
+</head>
+<body>
+
+<h2>Form Events</h2>
+
+<form onsubmit="submitForm(event)">
+
+    <label>Name:</label>
+    <input type="text"
+           id="name"
+           onfocus="focusInput()"
+           onblur="blurInput()">
+
+    <br><br>
+
+    <label>Course:</label>
+
+    <select id="course" onchange="changeCourse()">
+        <option value="">Select Course</option>
+        <option value="CSE">CSE</option>
+        <option value="AI">AI</option>
+        <option value="DS">Data Science</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+function focusInput() {
+    document.getElementById("message").innerHTML =
+        "Name field is focused";
+}
+
+function blurInput() {
+    document.getElementById("message").innerHTML =
+        "Name field lost focus";
+}
+
+function changeCourse() {
+    document.getElementById("message").innerHTML =
+        "Course selection changed";
+}
+
+function submitForm(event) {
+
+    event.preventDefault();
+
+    document.getElementById("message").innerHTML =
+        "Form submitted successfully";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+</head>
+<body>
+
+<h2>Student Table</h2>
+
+<button onclick="createTable()">Create Table</button>
+
+<div id="tableContainer"></div>
+
+<script>
+function createTable() {
+
+    let students = [
+        ["Jahnavi", 20],
+        ["Priya", 21],
+        ["Rahul", 19]
+    ];
+
+    let table = document.createElement("table");
+
+    table.border = "1";
+
+    let heading = table.insertRow();
+
+    heading.insertCell().innerHTML = "Name";
+    heading.insertCell().innerHTML = "Age";
+
+    students.forEach(function(student) {
+
+        let row = table.insertRow();
+
+        row.insertCell().innerHTML = student[0];
+        row.insertCell().innerHTML = student[1];
+
+    });
+
+    document.getElementById("tableContainer").appendChild(table);
+}
+</script>
+
+</body>
+</html>

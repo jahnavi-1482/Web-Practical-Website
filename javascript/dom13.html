@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Dropdown</title>
+</head>
+<body>
+
+<h2>Dynamic Dropdown List</h2>
+
+<select id="course">
+    <option value="">Select Course</option>
+</select>
+
+<button onclick="addCourse()">Add Course</button>
+
+<script>
+function addCourse() {
+
+    let course = prompt("Enter course name:");
+
+    if (course != "") {
+
+        let option = document.createElement("option");
+
+        option.text = course;
+        option.value = course;
+
+        document.getElementById("course").appendChild(option);
+    }
+}
+</script>
+
+</body>
+</html>

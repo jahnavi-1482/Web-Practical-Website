@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 38</title>
+</head>
+<body>
+
+<h1>JavaScript Program 38</h1>
+
+<p id="output"></p>
+
+<script>
+let name = "Rahul";
+
+const age = 20;
+
+let message = `My name is ${name} and I am ${age} years old.`;
+
+let student = {
+    name: "Rahul",
+    course: "Computer Science"
+};
+
+let { name: studentName, course } = student;
+
+document.getElementById("output").innerHTML =
+    message + "<br>" +
+    "Student Name: " + studentName + "<br>" +
+    "Course: " + course;
+</script>
+
+</body>
+</html>

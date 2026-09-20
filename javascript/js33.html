@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 33</title>
+</head>
+<body>
+
+<h1>JavaScript Program 33</h1>
+
+<p>What is the capital of India?</p>
+
+<input type="radio" name="answer" value="Delhi"> Delhi
+<br>
+
+<input type="radio" name="answer" value="Mumbai"> Mumbai
+<br>
+
+<input type="radio" name="answer" value="Chennai"> Chennai
+<br><br>
+
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="output"></p>
+
+<script>
+function checkAnswer() {
+
+    let answers = document.getElementsByName("answer");
+    let selected = "";
+
+    for (let i = 0; i < answers.length; i++) {
+        if (answers[i].checked) {
+            selected = answers[i].value;
+        }
+    }
+
+    if (selected === "Delhi") {
+        document.getElementById("output").innerHTML =
+            "Correct Answer!";
+    } else {
+        document.getElementById("output").innerHTML =
+            "Wrong Answer!";
+    }
+}
+</script>
+
+</body>
+</html>

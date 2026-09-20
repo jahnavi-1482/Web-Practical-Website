@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /* Universal selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Element selector */
+        p {
+            color: palevioletred;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: black;
+            padding: 10px;
+        }
+
+        /* ID selector */
+        #special {
+            color: blue;
+            font-size: 24px;
+        }
+
+        /* Attribute selector */
+        input[type="text"] {
+            border: 2px solid red;
+            padding: 8px;
+        }
+
+        /* Grouping selector */
+        h1, h2 {
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: white;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <div class="box">
+
+        <p>This uses an element selector.</p>
+
+        <p class="highlight">
+            This uses a class selector.
+        </p>
+
+        <p id="special">
+            This uses an ID selector.
+        </p>
+
+        <input type="text" placeholder="Attribute selector">
+
+        <h2>Grouping Selector Example</h2>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Column Layout</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px gray;
+        }
+
+        .column h2 {
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Three Column Layout</h1>
+
+    <div class="container">
+
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>First section of the webpage.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Second section of the webpage.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Third section of the webpage.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

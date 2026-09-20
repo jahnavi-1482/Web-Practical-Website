@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Largest Element</title>
+</head>
+<body>
+
+<script>
+let arr = [10, 25, 5, 40, 30];
+
+arr.sort(function(a, b) {
+    return b - a;
+});
+
+document.write("Array: " + arr + "<br>");
+document.write("Second largest element: " + arr[1]);
+</script>
+
+</body>
+</html>

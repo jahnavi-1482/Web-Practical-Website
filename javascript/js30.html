@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 30</title>
+</head>
+<body>
+
+<h1>JavaScript Program 30</h1>
+
+<form onsubmit="return validateForm()">
+
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email">
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<p id="output"></p>
+
+<script>
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+        document.getElementById("output").innerHTML =
+            "Please fill all fields.";
+        return false;
+    }
+
+    document.getElementById("output").innerHTML =
+        "Form submitted successfully.";
+
+    return false;
+}
+</script>
+
+</body>
+</html

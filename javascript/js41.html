@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 41</title>
+</head>
+<body>
+
+<h1>JavaScript Program 41</h1>
+
+<p>Demonstrate inheritance in JavaScript.</p>
+
+<p id="output"></p>
+
+<script>
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    displayName() {
+        return "Name: " + this.name;
+    }
+}
+
+class Student extends Person {
+    constructor(name, course) {
+        super(name);
+        this.course = course;
+    }
+
+    displayStudent() {
+        return this.displayName() +
+               "<br>Course: " + this.course;
+    }
+}
+
+let student = new Student("Rahul", "Computer Science");
+
+document.getElementById("output").innerHTML =
+    student.displayStudent();
+</script>
+
+</body>
+</html>

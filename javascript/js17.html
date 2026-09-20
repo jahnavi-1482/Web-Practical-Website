@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 17</title>
+</head>
+<body>
+
+<h1>JavaScript Program 17</h1>
+
+<p>Write a program demonstrating strings and string methods.</p>
+
+<input type="text" id="text" placeholder="Enter a string">
+
+<button onclick="showMethods()">Show Methods</button>
+
+<p id="output"></p>
+
+<script>
+function showMethods() {
+    let text = document.getElementById("text").value;
+
+    document.getElementById("output").innerHTML =
+        "Original: " + text + "<br>" +
+        "Uppercase: " + text.toUpperCase() + "<br>" +
+        "Lowercase: " + text.toLowerCase() + "<br>" +
+        "Length: " + text.length + "<br>" +
+        "Reverse: " + text.split("").reverse().join("");
+}
+</script>
+
+</body>
+</html>

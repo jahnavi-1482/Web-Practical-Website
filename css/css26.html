@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritance and Specificity</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            color: #333;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .special {
+            color: green;
+        }
+
+        #important {
+            color: red;
+        }
+
+        .box {
+            background-color: #eaf2ff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>CSS Inheritance and Specificity</h1>
+
+        <p>This paragraph gets its color from the element selector.</p>
+
+        <p class="special">
+            This paragraph gets its color from the class selector.
+        </p>
+
+        <p id="important">
+            This paragraph gets its color from the ID selector.
+        </p>
+
+        <p>
+            The font family is inherited from the body element.
+        </p>
+
+    </div>
+
+</body>
+</html>

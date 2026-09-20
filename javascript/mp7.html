@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Application</title>
+</head>
+<body>
+
+<h2>JavaScript Quiz</h2>
+
+<p>1. Which language is used for web page interactivity?</p>
+
+<input type="radio" name="q1" value="HTML"> HTML
+<br>
+
+<input type="radio" name="q1" value="JavaScript"> JavaScript
+<br>
+
+<input type="radio" name="q1" value="CSS"> CSS
+
+<br><br>
+
+<p>2. Which keyword creates a variable?</p>
+
+<input type="radio" name="q2" value="let"> let
+<br>
+
+<input type="radio" name="q2" value="style"> style
+<br>
+
+<input type="radio" name="q2" value="html"> html
+
+<br><br>
+
+<button onclick="checkQuiz()">Submit</button>
+
+<h3 id="result"></h3>
+
+<script>
+function checkQuiz() {
+
+    let score = 0;
+
+    let q1 = document.querySelector(
+        'input[name="q1"]:checked'
+    );
+
+    let q2 = document.querySelector(
+        'input[name="q2"]:checked'
+    );
+
+    if (q1 && q1.value == "JavaScript") {
+        score++;
+    }
+
+    if (q2 && q2.value == "let") {
+        score++;
+    }
+
+    document.getElementById("result").innerHTML =
+        "Your Score: " + score + "/2";
+}
+</script>
+
+</body>
+</html>

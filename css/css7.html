@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Positioning</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .static {
+            position: static;
+            background-color: #dbeafe;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            background-color: #bbf7d0;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container {
+            position: relative;
+            height: 150px;
+            margin: 20px;
+            background-color: #fef3c7;
+            padding: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: #fecaca;
+            padding: 15px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: #7c3aed;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #0f766e;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .content {
+            height: 700px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning</h1>
+
+    <div class="static">
+        Static Position
+    </div>
+
+    <div class="relative">
+        Relative Position
+    </div>
+
+    <div class="container">
+
+        Container with Absolute Position
+
+        <div class="absolute">
+            Absolute Position
+        </div>
+
+    </div>
+
+    <div class="sticky">
+        Sticky Position
+    </div>
+
+    <div class="content">
+        Scroll down to observe the sticky and fixed positions.
+        <br><br>
+        CSS positioning allows elements to be placed in different positions
+        on a webpage.
+    </div>
+
+    <div class="fixed">
+        Fixed Position
+    </div>
+
+</body>
+
+</html>

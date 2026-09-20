@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 02 - Arithmetic Operations</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>JavaScript Program 2</h1>
+
+    <h3>Question</h3>
+    <p>Write a JavaScript program to perform arithmetic operations.</p>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="output"></div>
+
+    <br>
+    <a href="index.html">← Back to JavaScript Programs</a>
+
+</div>
+
+<script>
+    function calculate() {
+
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let sum = a + b;
+        let difference = a - b;
+        let product = a * b;
+        let division = b !== 0 ? a / b : "Cannot divide by zero";
+
+        document.getElementById("output").innerHTML =
+            "Addition: " + sum + "<br>" +
+            "Subtraction: " + difference + "<br>" +
+            "Multiplication: " + product + "<br>" +
+            "Division: " + division;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 20</title>
+</head>
+<body>
+
+<h1>JavaScript Program 20</h1>
+
+<p>Write a program demonstrating Date and Math objects.</p>
+
+<button onclick="showObjects()">Show Date and Math</button>
+
+<p id="output"></p>
+
+<script>
+function showObjects() {
+    let date = new Date();
+
+    let number = 25;
+
+    document.getElementById("output").innerHTML =
+        "Current Date and Time: " + date + "<br>" +
+        "Square Root of 25: " + Math.sqrt(number) + "<br>" +
+        "Power of 2 and 3: " + Math.pow(2, 3) + "<br>" +
+        "Random Number: " + Math.random();
+}
+</script>
+
+</body>
+</html>

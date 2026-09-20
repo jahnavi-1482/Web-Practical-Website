@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-Index</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin: 50px auto;
+        }
+
+        .box1 {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-color: blue;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .box2 {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-color: red;
+            left: 150px;
+            top: 100px;
+            z-index: 2;
+        }
+
+        .text {
+            position: relative;
+            z-index: 3;
+            padding-top: 120px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Z-Index and Stacking Order</h1>
+
+    <div class="container">
+
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+
+        <div class="text">
+            Higher z-index appears on top
+        </div>
+
+    </div>
+
+</body>
+</html>

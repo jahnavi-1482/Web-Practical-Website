@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Pseudo Elements</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e293b;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+            max-width: 700px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* ::before */
+        h2::before {
+            content: "★ ";
+            color: blue;
+        }
+
+        /* ::after */
+        h2::after {
+            content: " ✓";
+            color: green;
+        }
+
+        /* ::first-letter */
+        .paragraph::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+
+        /* ::first-line */
+        .paragraph::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Pseudo-Elements</h1>
+
+    <div class="box">
+
+        <h2>Pseudo-Element Example</h2>
+
+        <p class="paragraph">
+            This paragraph demonstrates the use of CSS pseudo-elements.
+            The first letter and first line are styled differently.
+            Pseudo-elements can be used to style specific parts of an element.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

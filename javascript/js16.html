@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program 16</title>
+</head>
+<body>
+
+<h1>JavaScript Program 16</h1>
+
+<p>Write a program using arrow functions.</p>
+
+<input type="number" id="number" placeholder="Enter a number">
+
+<button onclick="showResult()">Calculate</button>
+
+<p id="output"></p>
+
+<script>
+const square = (number) => number * number;
+
+function showResult() {
+    let number = Number(document.getElementById("number").value);
+
+    document.getElementById("output").innerHTML =
+        "Square = " + square(number);
+}
+</script>
+
+</body>
+</html>
